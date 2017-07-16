@@ -45,7 +45,7 @@ public class QuickSort {
 				}
 			}
 
-			if (i >= j)
+			if (i > j)
 				break;
 
 			Util.swap(a, i, j);
