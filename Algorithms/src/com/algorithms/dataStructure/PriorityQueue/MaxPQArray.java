@@ -105,16 +105,16 @@ public class MaxPQArray<Key> implements Iterable<Key> {
 
 	private class HeapIterator implements Iterator<Key> {
 
+		int i = 0;
+
 		@Override
 		public boolean hasNext() {
-			// TODO Auto-generated method stub
-			return false;
+			return pq[i] != null;
 		}
 
 		@Override
 		public Key next() {
-			// TODO Auto-generated method stub
-			return null;
+			return pq[i++];
 		}
 	}
 
@@ -137,6 +137,9 @@ public class MaxPQArray<Key> implements Iterable<Key> {
 			System.out.println(pq);
 		}
 		StdOut.println(pq);
+		for (String e : pq) {
+			System.out.print(e + " ");
+		}
 	}
 
 }
